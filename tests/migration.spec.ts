@@ -8,7 +8,7 @@ test('Homepage', async ({ page, browser }) => {
 
   await page.setViewportSize({
     width: page.viewportSize()?.width || 0,
-    height: 4000
+    height: 3000
   })
 
   await expect(page).toHaveScreenshot({
