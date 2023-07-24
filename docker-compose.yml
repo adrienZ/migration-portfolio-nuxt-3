@@ -9,4 +9,4 @@ services:
     volumes:
       - ./tests:/app/tests
       - ./test-results:/app/test-results
-      # - ./playwright-report:/app/playwright-report
+      - ./playwright-report:/app/playwright-report
