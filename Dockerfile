@@ -6,4 +6,5 @@ COPY . .
 
 RUN yarn install
 RUN yarn playwright install --with-deps
-RUN yarn test
+
+CMD ["yarn", "test"]

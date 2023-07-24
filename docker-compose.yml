@@ -5,8 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: "yarn test:docker"
+    command: "yarn test"
     volumes:
-      - ./tests:app/tests
-      - ./test-results:app/test-results
-      - ./playwright-report:app/playwright-report
+      - ./tests:/app/tests
+      - ./test-results:/app/test-results
+      - ./playwright-report:/app/playwright-report

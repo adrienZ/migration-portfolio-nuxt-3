@@ -8,6 +8,6 @@
   },
   "scripts": {
     "test": "playwright test",
-    "test:docker": "docker-compose -f docker-compose.yml rm --stop --force portfolio && docker-compose -f docker-compose.yml build --no-cache portfolio && docker-compose -f docker-compose.yml up --exit-code-from portfolio"
+    "test:docker": "CI=true docker-compose -f docker-compose.yml rm --stop --force portfolio && docker-compose -f docker-compose.yml build --no-cache portfolio && docker-compose -f docker-compose.yml up --exit-code-from portfolio"
   }
 }
